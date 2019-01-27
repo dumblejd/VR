@@ -698,10 +698,10 @@ PlayerSettings:
     Purchasing: 0
     UNet: 0
     Unity_Ads: 0
-  facebookSdkVersion: 
+  facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 9008d592-2955-4617-8a24-72f1b44e0bfd
-  projectName: 
+  projectName: 3D Virtual Environment
   organizationId: dxj170930
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
