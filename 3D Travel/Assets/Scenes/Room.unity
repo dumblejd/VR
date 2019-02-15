@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17338662, g: 0.21673839, b: 0.29880732, a: 1}
+  m_IndirectSpecularColor: {r: 0.17338704, g: 0.21673898, b: 0.2988083, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1569,6 +1569,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 865853288}
+  - {fileID: 1552705341}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1644,7 +1645,7 @@ GameObject:
   - component: {fileID: 865853288}
   - component: {fileID: 865853289}
   m_Layer: 0
-  m_Name: Steering
+  m_Name: Steering(right)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3243,6 +3244,51 @@ Transform:
   m_Father: {fileID: 732620012}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1552705340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1552705341}
+  - component: {fileID: 1552705342}
+  m_Layer: 0
+  m_Name: Steering(left)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1552705341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1552705340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 733562142}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1552705342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1552705340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90c3132a20aafd4da443b9e367b50c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracker: {fileID: 1564508916}
+  joystick: {fileID: 1564508915}
+  button: {fileID: 1564508914}
+  space: {fileID: 69758125}
+  speed: 1
 --- !u!1001 &1564508913
 Prefab:
   m_ObjectHideFlags: 0
@@ -3370,6 +3416,24 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e43af32dbae9d467e869346a2bd6a834, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1564508914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114000012317510858, guid: e43af32dbae9d467e869346a2bd6a834,
+    type: 2}
+  m_PrefabInternal: {fileID: 1564508913}
+  m_Script: {fileID: 11500000, guid: 845da629d8bcf484eb1b69ddaec234f5, type: 3}
+--- !u!114 &1564508915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114000011074170670, guid: e43af32dbae9d467e869346a2bd6a834,
+    type: 2}
+  m_PrefabInternal: {fileID: 1564508913}
+  m_Script: {fileID: 11500000, guid: df65e55eb5c361b45815ab37e77054b3, type: 3}
+--- !u!114 &1564508916 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114000012954399558, guid: e43af32dbae9d467e869346a2bd6a834,
+    type: 2}
+  m_PrefabInternal: {fileID: 1564508913}
+  m_Script: {fileID: 11500000, guid: b63de49ab39654643838c439bb899a57, type: 3}
 --- !u!1 &1625705679
 GameObject:
   m_ObjectHideFlags: 0
